@@ -31,6 +31,7 @@ public class Employee extends Person {
 		this.employeeStat = employeeStat;
 	}
 
+	// test
 	private int employeeId;
 	private double basePay;
 	private String employeeStat;
