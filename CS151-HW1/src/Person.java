@@ -1,13 +1,13 @@
 
 public class Person {
 
-	private int age;
-	private String firstname;
-	private String lastname;
-	private float weight;
-	private String address;
-	private int ssn;
-	private String gen;
+	protected int age;
+	protected String firstname;
+	protected String lastname;
+	protected float weight;
+	protected String address;
+	protected int ssn;
+	protected String gen;
 
 	@Override
 	public String toString() {
@@ -17,7 +17,7 @@ public class Person {
 		return returnString;
 	}
 
-	public void Introduce(Person p) {
+	public void introduce(Person p) {
 
 		System.out.println(p.age);
 		System.out.println(p.firstname);

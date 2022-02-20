@@ -1,9 +1,13 @@
 
 public class Employee extends Person {
 
-	Employee(String firstname, String lastname, int age, int ssn, String address, String gen, float weight,
-			String employeeStat, double basePay) {
+	public Employee(String firstname, String lastname, int age, int ssn, String address, String gen, float weight,
+			int employeeId, String employeeStat, double basePay) {
 		super(firstname, lastname, age, ssn, address, gen, weight);
+		setEmployeeId(employeeId);
+		setBasePay(basePay);
+		setEmployeeStat(employeeStat);
+
 		// TODO Auto-generated constructor stub
 	}
 
@@ -32,12 +36,27 @@ public class Employee extends Person {
 	}
 
 	// test
-	private int employeeId;
-	private double basePay;
-	private String employeeStat;
+	protected int employeeId;
+	protected double basePay;
+	protected String employeeStat;
 
-	int calculatePay(int basePay, String employeeStat) {
-		int pay = basePay;
+	void introduce(Employee e) {
+
+		System.out.println(e.employeeId);
+		System.out.println(e.basePay);
+		System.out.println(e.employeeStat);
+		System.out.println(e.age);
+		System.out.println(e.firstname);
+		System.out.println(e.lastname);
+		System.out.println(e.ssn);
+		System.out.println(e.weight);
+		System.out.println(e.address);
+		System.out.println(e.gen);
+	}
+
+	double calculatePay(double unitsWorked) {
+		double hoursWeeks = unitsWorked;
+		double pay = basePay;
 		String full = "full time";
 		String part = "part time";
 		String contract = "contractor";
@@ -46,24 +65,25 @@ public class Employee extends Person {
 		if (full.equals(employeeStat))
 		// calculate pay for full time
 		{
-
+			double payment = basePay * 1 / 52 * hoursWeeks;
+			return payment;
 		}
 
-		else if (part.equals(employeeStat))
-
-		{
-			// calculate part time pay
-
-		}
-
+		/*
+		 * else if (part.equals(employeeStat))
+		 * 
+		 * { // calculate part time pay
+		 * 
+		 * }
+		 */
 		else
 
 		{
-			// contractor pay
+			double payment = basePay * hoursWeeks;
 
+			return payment;
 		}
 
-		return pay;
 	}
 
 }
