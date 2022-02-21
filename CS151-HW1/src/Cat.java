@@ -1,5 +1,5 @@
 
-public class Cat implements Scratcher, Domesticated {
+public class Cat extends Animal implements Scratcher, Domesticated {
 
 	private String type = "Scratcher and Domesticated";
 	private String name = "Cat";

@@ -1,5 +1,5 @@
 
-public class Dog implements Domesticated {
+public class Dog extends Animal implements Domesticated {
 
 	private String type = "Domesticated";
 	private String name = "dog";

@@ -1,5 +1,5 @@
 
-public class Whale implements Swimmer {
+public class Whale extends Animal implements Swimmer {
 
 	private String type = "Swimmer";
 	private String name = "Whale";

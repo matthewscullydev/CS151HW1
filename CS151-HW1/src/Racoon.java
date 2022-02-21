@@ -1,5 +1,5 @@
 
-public class Racoon implements Scratcher {
+public class Racoon extends Animal implements Scratcher {
 
 	private String type = "Scratcher";
 	private String name = "Racoon";
