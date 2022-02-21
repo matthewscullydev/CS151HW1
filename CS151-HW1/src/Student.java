@@ -49,7 +49,6 @@ public class Student {
 		void printSchedule(Student s) {
 
 			System.out.println("CS 151 Tues/Thurs 5:15-6:30 ");
-			System.out.println(s.age);
 			System.out.println("CS 146 Mon/Weds 7:15-8:30 ");
 			System.out.println("CS 147 Friday 7:15-8:30 ");
 		}
