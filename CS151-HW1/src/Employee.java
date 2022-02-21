@@ -42,16 +42,17 @@ public class Employee extends Person {
 
 	void introduce(Employee e) {
 
-		System.out.println(e.employeeId);
-		System.out.println(e.basePay);
-		System.out.println(e.employeeStat);
-		System.out.println(e.age);
-		System.out.println(e.firstname);
-		System.out.println(e.lastname);
-		System.out.println(e.ssn);
-		System.out.println(e.weight);
-		System.out.println(e.address);
-		System.out.println(e.gen);
+		System.out.println("Employee Id: " + e.employeeId);
+		System.out.println("Base pay: " + e.basePay);
+		System.out.println("Employee Status: " + e.employeeStat);
+		System.out.println("Age: " + e.age);
+		System.out.println("First name: " + e.firstname);
+		System.out.println("Last name: " + e.lastname);
+		System.out.println("SSN: " + e.ssn);
+		System.out.println("Weight: " + e.weight);
+		System.out.println("Address: " + e.address);
+		System.out.println("Gender: " + e.gen);
+
 	}
 
 	double calculatePay(double unitsWorked) {
@@ -62,10 +63,13 @@ public class Employee extends Person {
 		String contract = "contractor";
 		String stat = employeeStat;
 
-		if (full.equals(employeeStat))
+		if (full.equals(stat))
 		// calculate pay for full time
 		{
 			double payment = basePay * 1 / 52 * hoursWeeks;
+			System.out.println();
+			System.out.println("This worker's payment is " + payment);
+			System.out.println();
 			return payment;
 		}
 
@@ -80,7 +84,9 @@ public class Employee extends Person {
 
 		{
 			double payment = basePay * hoursWeeks;
-
+			System.out.println();
+			System.out.println("This worker's payment is " + payment);
+			System.out.println();
 			return payment;
 		}
 
