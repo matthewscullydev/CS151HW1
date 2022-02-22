@@ -1,14 +1,48 @@
-
+/**
+ * 
+ * @author Casual
+ * @version 1.0
+ * @since 2-21-22
+ * 
+ * Person class
+ * <p>
+ * This is the class for a person which includes an assortment of variables,
+ * an overriden toString() method, and the introduce method.
+ * </p>
+ */
 public class Person {
-
+	/**
+	 * protected int attribute
+	 */
 	protected int age;
+	/**
+	 * protected String attribute
+	 */
 	protected String firstname;
+	/**
+	 * protected String attribute
+	 */
 	protected String lastname;
+	/**
+	 * protected float attribute
+	 */
 	protected float weight;
+	/**
+	 * protected String attribute
+	 */
 	protected String address;
+	/**
+	 * protected int attribute
+	 */
 	protected int ssn;
+	/**
+	 * protected String attribute
+	 */
 	protected String gen;
-
+	/**
+	 * Overridden toString method, this method could print out all attributes
+	 * @return string with attributes
+	 */
 	@Override
 	public String toString() {
 		String returnString = " age: " + age + " ssn: " + ssn + " weight: " + weight + " firstname: " + firstname
@@ -17,6 +51,10 @@ public class Person {
 		return returnString;
 	}
 
+	/**
+	 * method for displaying attributes of a person
+	 * @param p which is a person with these attributes
+	 */
 	public void introduce(Person p) {
 
 		System.out.println(p.age);

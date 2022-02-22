@@ -1,4 +1,14 @@
-
+/**
+ * 
+ * @author Casual
+ * @version 1.0
+ * @since 2-21-22
+ * 
+ * EmployeeTest class
+ * <p>
+ * Test class which creates 5 employees, introduces them, and calculates their pay.
+ * </p>
+ */
 public class EmployeeTest {
 
 	public static void main(String[] args) {

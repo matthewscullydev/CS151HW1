@@ -1,40 +1,42 @@
 /**
  * 
- * 
- * @author Matthew Scully
+ * @author Casual
  * @version 1.0
- * @since 2/8/22
+ * @since 2-21-22
  * 
- *        <h1>Simple Student Test program /
- *        <h1>
- * 
- *
+ * Student class
+ * <p>
+ * This is the class for a student which includes an assortment of variables,
+ * a nested Course() class, and a printSchedule() method.
+ * </p>
  */
-
-//static keyword makes it so that you can use the method without creating an object.
-
-//setters set the value of a class variable using the value provided in the constructor parameter.
-
-//getters are methods invoked in order to retrieve this value.
-
-//this. is used as such in the following example
-
-/*
- * public int setAge(age) { this.age = age;
- *
- * return age; }
- */
-
-//
 
 public class Student {
-
+	/**
+	 * private float attribute
+	 */
 	private float gpa;
+	/**
+	 * private int attribute
+	 */
 	private int age;
+	/**
+	 * private String attribute
+	 */
 	private String major;
+	/**
+	 * private String attribute
+	 */
 	private String firstname;
+	/**
+	 * private String attribute
+	 */
 	private String lastname;
+	/**
+	 * private String attribute
+	 */
 	private String department;
+	
 
 	class Course {
 
@@ -45,8 +47,11 @@ public class Student {
 		// though I will use Student as an input to display how we can easily assign
 		// this to class related
 		// attributes.
-
-		void printSchedule(Student s) {
+		
+		/**
+		 * method for printing schedule
+		 */
+		void printSchedule() {
 
 			System.out.println("CS 151 Tues/Thurs 5:15-6:30 ");
 			System.out.println("CS 146 Mon/Weds 7:15-8:30 ");

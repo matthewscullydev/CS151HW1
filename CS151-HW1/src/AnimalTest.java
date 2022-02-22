@@ -1,4 +1,15 @@
-
+/**
+ * 
+ * @author Casual
+ * @version 1.0
+ * @since 2-21-22
+ * 
+ * AnimalTest class
+ * <p>
+ * This is the AnimalTest class used for creating an instance of the animals
+ * and calling each of their respective functions.
+ * </p>
+ */
 public class AnimalTest {
 
 	public static void main(String[] args) {

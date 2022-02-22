@@ -1,11 +1,39 @@
-
+/**
+ * 
+ * @author Casual
+ * @version 1.0
+ * @since 2-21-22
+ * 
+ * Racoon class
+ * <p>
+ *This is the Racoon class which has the capabilities of a scratcher type
+ * This Animal has predefined attributes and standard methods
+ * </p>
+ */
 public class Racoon extends Animal implements Scratcher {
-
+	/**
+	 * private String attribute
+	 */
 	private String type = "Scratcher";
+	/**
+	 * private String attribute
+	 */
 	private String name = "Racoon";
+	/**
+	 * private String attribute
+	 */
 	private String gender = "male";
+	/**
+	 * private int attribute
+	 */
 	private int age = 12;
+	/**
+	 * private String attribute
+	 */
 	private String environment = "Forest";
+	/**
+	 * private String attribute
+	 */
 	private String speed = "15 mph";
 
 	public String getType() {
@@ -55,7 +83,11 @@ public class Racoon extends Animal implements Scratcher {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-
+	/**
+	 * Overridden toString method, this method could print out all attributes
+	 * but in this case the program specified to print out what it is doing
+	 * @return string of author's choice
+	 */
 	@Override
 	public String toString() {
 
@@ -63,25 +95,33 @@ public class Racoon extends Animal implements Scratcher {
 		System.out.println("toString");
 		return teststr;
 	}
-
+	/**
+	 * method for moving
+	 */
 	public void move() {
 
 		System.out.println("moving");
 
 	}
-
+	/**
+	 * method for sleeping
+	 */
 	public void sleep() {
 
 		System.out.println("sleeping");
 
 	}
-
+	/**
+	 * method for animal sound
+	 */
 	public void sound() {
 
 		System.out.println("snarl");
 
 	}
-
+	/**
+	 * method for eating
+	 */
 	public void eat() {
 
 		System.out.println("eating");

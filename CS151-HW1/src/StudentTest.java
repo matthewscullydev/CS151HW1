@@ -1,4 +1,15 @@
-
+/**
+ * 
+ * @author Casual
+ * @version 1.0
+ * @since 2-21-22
+ * 
+ * StudentTest class
+ * <p>
+ * This is the class for testing the student class. 
+ * This class creates a student and prints its course by creating a course and using the printSchedule method inside the nested course class.
+ * </p>
+ */
 public class StudentTest {
 
 	public static void main(String[] args) {
@@ -7,7 +18,7 @@ public class StudentTest {
 
 		Student.Course testcourse = test.new Course();
 
-		testcourse.printSchedule(test);
+		testcourse.printSchedule();
 
 	}
 

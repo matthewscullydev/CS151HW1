@@ -1,11 +1,39 @@
-
+/**
+ * 
+ * @author Casual
+ * @version 1.0
+ * @since 2-21-22
+ * 
+ * Dog class
+ * <p>
+ *This is the dog class which has the capabilities of a domesticated type
+ * This Animal has predefined attributes and standard methods including the bark method
+ * </p>
+ */
 public class Dog extends Animal implements Domesticated {
-
+	/**
+	 * private String attribute
+	 */
 	private String type = "Domesticated";
-	private String name = "dog";
+	/**
+	 * private String attribute
+	 */
+	private String name = "dog";	
+	/**
+	 * private int attribute
+	 */
 	private int age = 7;
+	/**
+	 * private String attribute
+	 */
 	private String gender = "male";
+	/**
+	 * private String attribute
+	 */
 	private String environment = "home";
+	/**
+	 * private String attribute
+	 */
 	private String speed = "30 mph";
 
 	public String getType() {
@@ -47,7 +75,12 @@ public class Dog extends Animal implements Domesticated {
 	public void setSpeed(String speed) {
 		this.speed = speed;
 	}
-
+	
+	/**
+	 * Overridden toString method, this method could print out all attributes
+	 * but in this case the program specified to print out what it is doing
+	 * @return string of author's choice
+	 */
 	@Override
 	public String toString() {
 
@@ -55,31 +88,46 @@ public class Dog extends Animal implements Domesticated {
 		System.out.println("toString");
 		return teststr;
 	}
-
+	
+	/**
+	 * method for moving
+	 */
 	public void move() {
-
+		
 		System.out.println("moving");
 
 	}
+	
+	/**
+	 * method for sleeping
+	 */
 
 	public void sleep() {
 
 		System.out.println("sleeping");
 
 	}
-
+	
+	/**
+	 * method for animal sound
+	 */
 	public void sound() {
 
 		System.out.println("woof");
 
 	}
 
+	/**
+	 * method for eating
+	 */
 	public void eat() {
 
 		System.out.println("eating");
 
 	}
-
+	/**
+	 * method for barking
+	 */
 	public void bark() {
 		System.out.println("bark");
 	}

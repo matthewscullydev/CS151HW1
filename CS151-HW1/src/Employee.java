@@ -1,4 +1,15 @@
+/**
+ * 
+ * @author Casual
+ * @version 1.0
+ * @since 2-21-22
+ * 
+ * class
+ * <p>
+ *
 
+ * </p>
+ */
 public class Employee extends Person {
 
 	public Employee(String firstname, String lastname, int age, int ssn, String address, String gen, float weight,

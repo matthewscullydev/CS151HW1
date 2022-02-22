@@ -1,4 +1,15 @@
-
+/**
+ * 
+ * @author Casual
+ * @version 1.0
+ * @since 2-21-22
+ * 
+ * Whale class
+ * <p>
+ * This is the Whale class which has the capabilities of a swimmer type
+ * This Animal has predefined attributes and standard methods
+ * </p>
+ */
 public class Whale extends Animal implements Swimmer {
 
 	private String type = "Swimmer";
@@ -55,7 +66,11 @@ public class Whale extends Animal implements Swimmer {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-
+	/**
+	 * Overridden toString method, this method could print out all attributes
+	 * but in this case the program specified to print out what it is doing
+	 * @return string of author's choice
+	 */
 	@Override
 	public String toString() {
 
