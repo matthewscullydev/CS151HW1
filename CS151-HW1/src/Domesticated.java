@@ -6,7 +6,7 @@
  * 
  * Domesticated interface
  * <p>
- * Interface which includes the walk() and greetHuman() methods.
+ * Interface which includes multiple methods.
  * </p>
  */
 public interface Domesticated {
