@@ -9,7 +9,7 @@
  * Interface which includes the walk() and greetHuman() methods.
  * </p>
  */
-interface Domesticated {
+public interface Domesticated {
 	/**
 	 * method for walking
 	 */
