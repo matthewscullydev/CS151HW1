@@ -76,13 +76,12 @@ public class Cat extends Animal implements Scratcher, Domesticated {
 	public void setSpeed(String speed) {
 		this.speed = speed;
 	}
-
-	@Override
 	/**
 	 * Overridden toString method, this method could print out all attributes
 	 * but in this case the program specified to print out what it is doing
 	 * @return string of author's choice
 	 */
+	@Override
 	public String toString() {
 
 		String teststr = "replaced string";
