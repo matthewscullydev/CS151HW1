@@ -1,6 +1,6 @@
 /**
  * 
- * @author Casual
+ * @author Matthew Scully
  * @version 1.0
  * @since 2-21-22
  * 

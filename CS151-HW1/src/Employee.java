@@ -1,13 +1,12 @@
 /**
  * 
- * @author Casual
+ * @author Matthew Scully
  * @version 1.0
  * @since 2-21-22
  * 
  * class
  * <p>
- *
-
+ * Employee class which contains super contructor and employee attributes
  * </p>
  */
 public class Employee extends Person {
@@ -47,10 +46,23 @@ public class Employee extends Person {
 	}
 
 	// test
+	/**
+	 * protected int attribute
+	 */
 	protected int employeeId;
+	/**
+	 * protected double attribute
+	 */
 	protected double basePay;
+	/**
+	 * protected String attribute
+	 */
 	protected String employeeStat;
 
+	/**
+	 * method for introducing employee
+	 * @param e
+	 */
 	void introduce(Employee e) {
 
 		System.out.println("Employee Id: " + e.employeeId);
@@ -66,6 +78,11 @@ public class Employee extends Person {
 
 	}
 
+	/**
+	 * method for calcuating pay using units worked in equation
+	 * @param unitsWorked hours / weeks worked
+	 * @return
+	 */
 	double calculatePay(double unitsWorked) {
 		double hoursWeeks = unitsWorked;
 		double pay = basePay;
